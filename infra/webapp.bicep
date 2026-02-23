@@ -11,7 +11,8 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2022-09-01' = {
     reserved: true
   }
   sku: {
-    name: sku
+    name: 's1'
+    tier: 'Standard'
   }
 }
 resource appService 'Microsoft.Web/sites@2022-09-01' = {
